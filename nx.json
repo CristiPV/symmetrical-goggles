@@ -1,18 +1,13 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "template-workspace",
   "tasksRunnerOptions": {
     "default": {
@@ -26,15 +21,7 @@
     }
   },
   "projects": {
-    "java-api": {
-      "tags": []
-    },
-    "react-app": {
-      "tags": []
-    },
-    "react-app-e2e": {
-      "tags": [],
-      "implicitDependencies": ["react-app"]
-    }
+    "angular-app": { "tags": [] },
+    "angular-app-e2e": { "tags": [], "implicitDependencies": ["angular-app"] }
   }
 }
