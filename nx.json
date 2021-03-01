@@ -20,5 +20,8 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "angular-app": { "tags": [] },
+    "angular-app-e2e": { "tags": [], "implicitDependencies": ["angular-app"] }
+  }
 }
