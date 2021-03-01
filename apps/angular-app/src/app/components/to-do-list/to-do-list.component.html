@@ -1,0 +1,11 @@
+<template-workspace-add-to-do
+    (addToDo)='addToDo( $event )'
+>
+</template-workspace-add-to-do>
+<template-workspace-to-do-item 
+    *ngFor='let toDo of toDoList' 
+    [toDo]='toDo'
+    (deleteToDo)='deleteToDo( $event )'
+>
+</template-workspace-to-do-item>
+
