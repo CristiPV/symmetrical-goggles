@@ -1,19 +1,11 @@
 {
   "version": 1,
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
-  },
+  "cli": { "defaultCollection": "@nrwl/angular" },
   "schematics": {
     "@nrwl/angular": {
-      "application": {
-        "linter": "eslint"
-      },
-      "library": {
-        "linter": "eslint"
-      },
-      "storybook-configuration": {
-        "linter": "eslint"
-      }
+      "application": { "linter": "eslint" },
+      "library": { "linter": "eslint" },
+      "storybook-configuration": { "linter": "eslint" }
     },
     "@nrwl/angular:application": {
       "style": "css",
@@ -26,79 +18,12 @@
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
-    "@nrwl/angular:component": {
-      "style": "css"
-    },
+    "@nrwl/angular:component": { "style": "css" },
     "@nrwl/react": {
-      "application": {
-        "style": "css",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint"
-      }
+      "application": { "style": "css", "linter": "eslint", "babel": true },
+      "component": { "style": "css" },
+      "library": { "style": "css", "linter": "eslint" }
     }
   },
-  "projects": {
-    "java-api": {
-      "projectType": "application",
-      "root": "apps/java-api",
-      "sourceRoot": "apps/java-api/src",
-      "architect": {
-        "run": {
-          "builder": "@nxrocks/nx-spring-boot:run",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "serve": {
-          "builder": "@nxrocks/nx-spring-boot:serve",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "test": {
-          "builder": "@nxrocks/nx-spring-boot:test",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "clean": {
-          "builder": "@nxrocks/nx-spring-boot:clean",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "buildJar": {
-          "builder": "@nxrocks/nx-spring-boot:buildJar",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "buildWar": {
-          "builder": "@nxrocks/nx-spring-boot:buildWar",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "buildImage": {
-          "builder": "@nxrocks/nx-spring-boot:buildImage",
-          "options": {
-            "root": "apps/java-api"
-          }
-        },
-        "buildInfo": {
-          "builder": "@nxrocks/nx-spring-boot:buildInfo",
-          "options": {
-            "root": "apps/java-api"
-          }
-        }
-      }
-    }
-  }
+  "projects": {}
 }
